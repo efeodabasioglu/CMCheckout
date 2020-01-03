@@ -22,8 +22,10 @@ window.Vue = require('vue');
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
 let routes = [
-    { path: '/', component: require('./components/Currency').default},
-    { path: '/success', component: require('./components/Success').default}
+    { path: '/', component: require('./components/Home').default},
+    { path: '/{{code}}', component: require('./components/Home').default},
+    { path: '/cryptoCurrency', component: require('./components/Currency').default},
+    { path: '/cryptoCurrency/{{slug}}', component: require('./components/Currency').default},
 ];
 
 const router = new VueRouter({

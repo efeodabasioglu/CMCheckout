@@ -17,5 +17,4 @@ Route::get('/', function () {
 
 
 Route::get('/currency', 'CurrencyController@index');
-Route::get('/priceConversion', 'CurrencyController@priceConversion');
-Route::get('/priceConversion/{amount]', 'CurrencyController@priceConversionCoin');
+Route::get('/login', 'CurrencyController@login');
